@@ -11,7 +11,7 @@
 	# Mhankbarbar
 	# Nurutomo
 	# Rashid
-	# ZeeoneOfc
+	# Ina Ofc
 	# Penyedia Module
 	# And All Support
 **/
@@ -639,7 +639,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     + `ORG:Owner ${botname};\n` // the organization of the contact
                     + `TEL;type=CELL;type=VOICE;waid=${ownernomer}:${ownernomerr}\n`
                     + 'END:VCARD'
-                alpha.sendMessage(m.chat, { contacts: { displayName: 'Zeeone Ofc.', contacts: [{ vcard }] } }, { quoted: m })
+                alpha.sendMessage(m.chat, { contacts: { displayName: 'Ina Ofc.', contacts: [{ vcard }] } }, { quoted: m })
             }
             break
             case 'rules':{
