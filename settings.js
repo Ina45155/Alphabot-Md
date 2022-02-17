@@ -18,19 +18,19 @@ global.autoketik = false //status auto mengetik (auto typing)
 global.available = false //status online (online)
 
 // Other
-global.botname = "BOT INA"
-global.ownername= "INA"
+global.botname = "BOT VVIP"
+global.ownername= "DOI"
 global.myweb ="https://api-inabot.herokuapp.com/"
 global.youtube = "https://youtube.com/c/Ina"
 global.github = "https://inaofc.github.io/"
-global.ownernomer = "6283815150943"
-global.ownernomerr = "6283815150943"
+global.ownernomer = "6281283408836"
+global.ownernomerr = "6281283408836"
 global.thumbnail = "./image/lol.jpg"
 global.donasi = "./image/donasi.jpg"
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
-global.owner = ["6283815150943"] //ganti agar fitur owner bisa di gunakan
-global.packname = '© Ina' //sticker wm
-global.author = 'SelebBanten' //sticker wm
+global.owner = ["6281283408836"] //ganti agar fitur owner bisa di gunakan
+global.packname = '© DOI' //sticker wm
+global.author = 'BOT VVIP' //sticker wm
 global.sessionName = 'session'
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
