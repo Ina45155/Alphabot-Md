@@ -87,7 +87,7 @@ exports.notNum = (q) => {
 }
 exports.menunya = (salam, pushname) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya INA BOT, bot ini adalah Beta Multi-Device Whatsapp. 
+saya Alphabot-Md, bot ini adalah Beta Multi-Device Whatsapp. 
 Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
 lapor owner agar segera di perbaiki 🙏      
 `
@@ -95,7 +95,7 @@ lapor owner agar segera di perbaiki 🙏
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu BOT INA :*
+*📚 List-Menu Alphabot-Md :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -122,6 +122,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}bc [text]
 ├ ${prefix}bcgc [text]
 ├ ${prefix}nsfw [on/off]
+├ ${prefix}autorespond [on/off]
 ├ ${prefix}antiviewonce [on/off]
 ├ ${prefix}join [link]
 ├ ${prefix}self
@@ -280,6 +281,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}igtv [link]
 ├ ${prefix}soundcloud [link]
 ├ ${prefix}gitclone [link repo]
+├ ${prefix}gitrepo [username repo branch]
 ├ ${prefix}mediafire [link]
 ╰❒ ${prefix}twitter link
 
@@ -589,6 +591,52 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}memegen [text|text]
 ╰❒
 
+╭─❒ 「 Game Menu 」
+├ ${prefix}kuismath
+├ ${prefix}tebak [option]
+├ ${prefix}tekateki
+├ ${prefix}susunkata
+╰❒ ${prefix}caklontong
+
+
+╭─❒ 「 Asupan Menu 」
+├ ${prefix}chika
+├ ${prefix}delvira
+├ ${prefix}ayu
+├ ${prefix}bunga
+├ ${prefix}aura
+├ ${prefix}nisa
+├ ${prefix}ziva
+├ ${prefix}yana
+├ ${prefix}viona
+├ ${prefix}syania
+├ ${prefix}riri
+├ ${prefix}syifa
+├ ${prefix}mama_gina
+├ ${prefix}alcakenya
+├ ${prefix}mangayutri
+├ ${prefix}rikagusriani
+├ ${prefix}asupan
+├ ${prefix}bocil
+├ ${prefix}geayubi
+├ ${prefix}santuy
+├ ${prefix}ukhty
+╰❒ ${prefix}syifa
+
+
+╭─❒ 「 Random Cewe 」
+├ ${prefix}china 
+├ ${prefix}indonesia 
+├ ${prefix}malaysia 
+├ ${prefix}thailand 
+├ ${prefix}korea 
+├ ${prefix}japan 
+├ ${prefix}vietnam 
+├ ${prefix}jenni 
+├ ${prefix}jiso 
+├ ${prefix}lisa  
+╰❒ ${prefix}rose
+
 ╭─❒ 「 TqTo 」 
 ├ My God
 ├ My Parents
@@ -598,7 +646,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ Mhankbarbar
 ├ Nurutomo
 ├ Rashid
-├ INAOfc
+├ ZeeoneOfc
 ├ Penyedia Module
 ╰❒ And All Support
     `
@@ -637,7 +685,7 @@ Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
 
 ⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
 
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan BOT INA
+Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
 😖🙏
 `
 }
@@ -658,7 +706,7 @@ exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://github.com/anonymouse/bot
+Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
 `
 }
 exports.tos = (ownernomer) => {
@@ -705,6 +753,7 @@ return`╭─❒ 「 Owner 」
 ├ ${prefix}bc [text]
 ├ ${prefix}bcgc [text]
 ├ ${prefix}nsfw [on/off]
+├ ${prefix}autorespond [on/off]
 ├ ${prefix}antiviewonce [on/off]
 ├ ${prefix}join [link]
 ├ ${prefix}self
@@ -878,6 +927,7 @@ return`╭─❒ 「 Download 」
 ├ ${prefix}igtv [link]
 ├ ${prefix}soundcloud [link]
 ├ ${prefix}gitclone [link repo]
+├ ${prefix}gitrepo [username repo branch]
 ├ ${prefix}mediafire [link]
 ╰❒ ${prefix}twitter link
 `
@@ -1200,6 +1250,56 @@ return`╭─❒ 「 Others 」
 ╰❒ ${prefix}memegen [text|text]
 `
 }
+exports.game = (prefix) =>{
+return`╭─❒ 「 Game Menu 」
+├ ${prefix}kuismath
+├ ${prefix}tebak [option]
+├ ${prefix}tekateki
+├ ${prefix}susunkata
+╰❒ ${prefix}caklontong
+`
+}
+exports.asupan = (prefix) =>{
+return`╭─❒ 「 Asupan Menu 」
+├ ${prefix}chika
+├ ${prefix}delvira
+├ ${prefix}ayu
+├ ${prefix}bunga
+├ ${prefix}aura
+├ ${prefix}nisa
+├ ${prefix}ziva
+├ ${prefix}yana
+├ ${prefix}viona
+├ ${prefix}syania
+├ ${prefix}riri
+├ ${prefix}syifa
+├ ${prefix}mama_gina
+├ ${prefix}alcakenya
+├ ${prefix}mangayutri
+├ ${prefix}rikagusriani
+├ ${prefix}asupan
+├ ${prefix}bocil
+├ ${prefix}geayubi
+├ ${prefix}santuy
+├ ${prefix}ukhty
+╰❒ ${prefix}syifa
+`
+}
+exports.cecan = (prefix) =>{
+return`╭─❒ 「 Random Cewe 」
+├ ${prefix}china 
+├ ${prefix}indonesia 
+├ ${prefix}malaysia 
+├ ${prefix}thailand 
+├ ${prefix}korea 
+├ ${prefix}japan 
+├ ${prefix}vietnam 
+├ ${prefix}jenni 
+├ ${prefix}jiso 
+├ ${prefix}lisa  
+╰❒ ${prefix}rose
+`
+}
 
 exports.tqto = () =>{
 	return`╭─❒ 「 TqTo 」 
@@ -1211,7 +1311,7 @@ exports.tqto = () =>{
 ├ Mhankbarbar
 ├ Nurutomo
 ├ Rashid
-├ InaOfc
+├ ZeeoneOfc
 ├ Penyedia Module
 ╰❒ And All Support
 `
