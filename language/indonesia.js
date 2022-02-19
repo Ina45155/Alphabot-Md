@@ -87,7 +87,7 @@ exports.notNum = (q) => {
 }
 exports.menunya = (salam, pushname) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya Alphabot-Md, bot ini adalah Beta Multi-Device Whatsapp. 
+saya BOT VVIP, bot ini adalah Beta Multi-Device Whatsapp. 
 Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
 lapor owner agar segera di perbaiki 🙏      
 `
@@ -95,7 +95,7 @@ lapor owner agar segera di perbaiki 🙏
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*📚 List-Menu BOT VVIP :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -646,7 +646,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ Mhankbarbar
 ├ Nurutomo
 ├ Rashid
-├ ZeeoneOfc
+├ DoiOfc
 ├ Penyedia Module
 ╰❒ And All Support
     `
@@ -706,7 +706,7 @@ exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
+Recode : https://youtube.com
 `
 }
 exports.tos = (ownernomer) => {
@@ -1311,7 +1311,7 @@ exports.tqto = () =>{
 ├ Mhankbarbar
 ├ Nurutomo
 ├ Rashid
-├ ZeeoneOfc
+├ DoiOfc
 ├ Penyedia Module
 ╰❒ And All Support
 `
