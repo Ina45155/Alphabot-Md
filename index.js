@@ -11,7 +11,7 @@
 	@ Mhankbarbar
 	@ Nurutomo
 	@ Rashid
-	@ DOIOfc
+	@ DoiOfc
 	@ Penyedia Module
 	@ And All Support
 **/
