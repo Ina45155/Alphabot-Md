@@ -4,7 +4,6 @@ exports.private = () =>{
 exports.wait = () => {
     return `⏳ Mohon tunggu sebentar~`
 }
-
 exports.ok = () => {
     return `✅ Done. Ok desu~`
 }
@@ -85,9 +84,9 @@ exports.videoLimit = () => {
 exports.notNum = (q) => {
     return `"${q}", bukan angka!`
 }
-exports.menunya = (salam, pushname) =>{
+exports.menunya = (salam, pushname, botname) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya BOT VVIP, bot ini adalah Beta Multi-Device Whatsapp. 
+saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp. 
 Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
 lapor owner agar segera di perbaiki 🙏      
 `
@@ -95,7 +94,7 @@ lapor owner agar segera di perbaiki 🙏
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu BOT VVIP :*
+*📚 List-Menu VVIP BOT :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -115,6 +114,10 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}setmenu [query]
 ├ ${prefix}setmenu templateLocation
 ├ ${prefix}setmenu templateTenor
+├ ${prefix}setmenu katalog
+├ ${prefix}setmenu katalog2
+├ ${prefix}setmenu list
+├ ${prefix}setwm packname|author
 ├ ${prefix}sendsesi
 ├ ${prefix}listpc
 ├ ${prefix}listgc
@@ -148,6 +151,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╭─❒ 「 Group 」 
 ├ ${prefix}listonline
 ├ ${prefix}sider
+├ ${prefix}wm packname|author
 ├ ${prefix}infochat
 ├ ${prefix}setdesk [text]
 ├ ${prefix}setppgrup [reply image]
@@ -158,6 +162,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}kick @tag
 ├ ${prefix}leave
 ├ ${prefix}linkgc
+├ ${prefix}take packname|author
 ├ ${prefix}group [open/close]
 ├ ${prefix}tagall [text]
 ╰❒ ${prefix}hidetag [text]
@@ -191,9 +196,12 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}pinterest [query]
 
 
-╭─❒ 「 Converter 」 
+╭─❒ 「 Converter 」
+├ ${prefix}toaudio [video]
+├ ${prefix}tomp3 [video]
+├ ${prefix}tovn [video]
 ├ ${prefix}stiker [reply image]
-├ ${prefix}tourl [image/video]
+├ ${prefix}tourl [image/video/stiker]
 ├ ${prefix}togif [sticker]
 ├ ${prefix}tomp4 [sticker]
 ╰❒${prefix}toimg [reply sticker]
@@ -285,6 +293,37 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}mediafire [link]
 ╰❒ ${prefix}twitter link
 
+╭─❒ 「 Primbon 」
+├ ${prefix}nomorhoki 887435047326
+├ ${prefix}artimimpi [query]
+├ ${prefix}artinama [query]
+├ ${prefix}ramaljodoh
+├ ${prefix}ramaljodohbali
+├ ${prefix}suamiistri
+├ ${prefix}ramalcinta
+├ ${prefix}cocoknama
+├ ${prefix}pasangan
+├ ${prefix}jadiannikah
+├ ${prefix}sifatusaha
+├ ${prefix}rezeki
+├ ${prefix}pekerjaan
+├ ${prefix}nasib
+├ ${prefix}penyakit
+├ ${prefix}tarot
+├ ${prefix}fengshui
+├ ${prefix}haribaik
+├ ${prefix}harisangar
+├ ${prefix}harisial
+├ ${prefix}nagahari
+├ ${prefix}arahrezeki
+├ ${prefix}peruntungan
+├ ${prefix}weton
+├ ${prefix}karakter
+├ ${prefix}keberuntungan
+├ ${prefix}memancing
+├ ${prefix}masasubur
+├ ${prefix}zodiak 
+╰❒ ${prefix}shio [query]
 
 ╭─❒ 「 Random Anime 」
 ├ ${prefix}loli
@@ -623,7 +662,29 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}ukhty
 ╰❒ ${prefix}syifa
 
-
+╭─❒ 「 Telegram Sticker 」
+├ ${prefix}awoawo
+├ ${prefix}benedict
+├ ${prefix}chat
+├ ${prefix}dbfly
+├ ${prefix}dino_kuning
+├ ${prefix}doge
+├ ${prefix}gojosatoru
+├ ${prefix}hope_boy
+├ ${prefix}jisoo
+├ ${prefix}kr_robot
+├ ${prefix}kucing
+├ ${prefix}lonte
+├ ${prefix}manusia_lidi
+├ ${prefix}menjamet
+├ ${prefix}meow
+├ ${prefix}nicholas
+├ ${prefix}patrick
+├ ${prefix}popoci
+├ ${prefix}sponsbob
+├ ${prefix}kawan_sponsbob
+╰❒ ${prefix}tyni
+,
 ╭─❒ 「 Random Cewe 」
 ├ ${prefix}china 
 ├ ${prefix}indonesia 
@@ -646,7 +707,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ Mhankbarbar
 ├ Nurutomo
 ├ Rashid
-├ DoiOfc
+├ VVIPOfc
 ├ Penyedia Module
 ╰❒ And All Support
     `
@@ -706,7 +767,7 @@ exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com
+Recode : https://youtube.com/DOI
 `
 }
 exports.tos = (ownernomer) => {
@@ -746,6 +807,10 @@ return`╭─❒ 「 Owner 」
 ├ ${prefix}setmenu [query]
 ├ ${prefix}setmenu templateLocation
 ├ ${prefix}setmenu templateTenor
+├ ${prefix}setmenu katalog
+├ ${prefix}setmenu katalog2
+├ ${prefix}setmenu list
+├ ${prefix}setwm packname|author
 ├ ${prefix}sendsesi
 ├ ${prefix}listpc
 ├ ${prefix}listgc
@@ -781,6 +846,7 @@ exports.group = (prefix) =>{
 	return`╭─❒ 「 Group 」 
 ├ ${prefix}listonline
 ├ ${prefix}sider
+├ ${prefix}wm packname|author
 ├ ${prefix}infochat
 ├ ${prefix}setdesk [text]
 ├ ${prefix}setppgrup [reply image]
@@ -791,6 +857,7 @@ exports.group = (prefix) =>{
 ├ ${prefix}kick @tag
 ├ ${prefix}leave
 ├ ${prefix}linkgc
+├ ${prefix}take packname|author
 ├ ${prefix}group [open/close]
 ├ ${prefix}tagall [text]
 ╰❒ ${prefix}hidetag [text]
@@ -833,6 +900,9 @@ exports.search = (prefix) =>{
 
 exports.converter = (prefix) =>{
 	return`╭─❒ 「 Converter 」 
+├ ${prefix}toaudio [video]
+├ ${prefix}tomp3 [video]
+├ ${prefix}tovn [video]
 ├ ${prefix}stiker [reply image]
 ├ ${prefix}tourl [image/video]
 ├ ${prefix}togif [sticker]
@@ -1311,8 +1381,68 @@ exports.tqto = () =>{
 ├ Mhankbarbar
 ├ Nurutomo
 ├ Rashid
-├ DoiOfc
+├ ZeeoneOfc
 ├ Penyedia Module
 ╰❒ And All Support
 `
 }
+
+exports.primbonmenu = (prefix) =>{
+	return`╭─❒ 「 Primbon 」
+├ ${prefix}nomorhoki 887435047326
+├ ${prefix}artimimpi [query]
+├ ${prefix}artinama [query]
+├ ${prefix}ramaljodoh
+├ ${prefix}ramaljodohbali
+├ ${prefix}suamiistri
+├ ${prefix}ramalcinta
+├ ${prefix}cocoknama
+├ ${prefix}pasangan
+├ ${prefix}jadiannikah
+├ ${prefix}sifatusaha
+├ ${prefix}rezeki
+├ ${prefix}pekerjaan
+├ ${prefix}nasib
+├ ${prefix}penyakit
+├ ${prefix}tarot
+├ ${prefix}fengshui
+├ ${prefix}haribaik
+├ ${prefix}harisangar
+├ ${prefix}harisial
+├ ${prefix}nagahari
+├ ${prefix}arahrezeki
+├ ${prefix}peruntungan
+├ ${prefix}weton
+├ ${prefix}karakter
+├ ${prefix}keberuntungan
+├ ${prefix}memancing
+├ ${prefix}masasubur
+├ ${prefix}zodiak 
+╰❒ ${prefix}shio [query]
+`
+}
+
+exports.stcmenu = (prefix) =>{
+	return`╭─❒ 「 Telegram Sticker 」
+├ ${prefix}awoawo
+├ ${prefix}benedict
+├ ${prefix}chat
+├ ${prefix}dbfly
+├ ${prefix}dino_kuning
+├ ${prefix}doge
+├ ${prefix}gojosatoru
+├ ${prefix}hope_boy
+├ ${prefix}jisoo
+├ ${prefix}kr_robot
+├ ${prefix}kucing
+├ ${prefix}lonte
+├ ${prefix}manusia_lidi
+├ ${prefix}menjamet
+├ ${prefix}meow
+├ ${prefix}nicholas
+├ ${prefix}patrick
+├ ${prefix}popoci
+├ ${prefix}sponsbob
+├ ${prefix}kawan_sponsbob
+╰❒ ${prefix}tyni
+`}
