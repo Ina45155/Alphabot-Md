@@ -12,25 +12,27 @@ global.APIKeys = {
 }
 
 // setting 
-global.autoread = true // auto read pesan / message
+global.autoread = false // auto read pesan / message
 global.autorecording = true //status auto merekam ( auto record )
 global.autoketik = false //status auto mengetik (auto typing)
 global.available = false //status online (online)
 
 // Other
-global.botname = "VVIP BOT"
-global.ownername= "DOI"
-global.myweb ="https://api-doibot.herokuapp.com/"
-global.youtube = "https://youtube.com/c/doi"
-global.github = "https://doi.github.io/"
-global.ownernomer = "6281283408836"
-global.ownernomerr = "+6281283408836"
-global.thumbnail = "./image/lol.jpg"
-global.donasi = "./image/donasi.jpg"
+global.botname = "VVIP BOT" //namabot kalian
+global.ownername= "DOI" //nama kalian
+global.myweb ="https://api-DOIbot.herokuapp.com/" //bebas asal jan hapus
+global.youtube = "https://youtube.com/" //bebas asal jan hapus
+global.github = "https://vvip-ofc.github.io/" //bebas
+global.email = "vvipbot@gmail.com" //bebas
+global.region = "Indonesia" //bebas
+global.ownernomer = "6281263523639" // nomor wa kalian
+global.ownernomerr = "+6281263523639" //nmr wa kalian
+global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
+global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
-global.owner = ["6281283408836"] //ganti agar fitur owner bisa di gunakan
-global.packname = '© VVIP BOT' //sticker wm
-global.author = 'DOI' //sticker wm
+global.owner = ["6281263523639"] //ganti agar fitur owner bisa di gunakan
+global.packname = '© vvip bot' //sticker wm ubah
+global.author = 'DOI' //sticker wm ganti nama kalian
 global.sessionName = 'session'
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
